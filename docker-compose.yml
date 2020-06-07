@@ -54,7 +54,7 @@ volumes:
 
 # http://127.0.0.1:10080/
 # $ docker-compose up -d --build
-# $ docker-compose down 
+# $ docker-compose down
 
 # 参考URL http://docs.docker.jp/compose/compose-file.html#service-configuration-reference
 
@@ -65,5 +65,3 @@ volumes:
 # cp .env.example .env
 # php artisan key:generate
 # php artisan migrate
-# 
-# 
