@@ -56,6 +56,8 @@ volumes:
 # $ docker-compose up -d --build
 # $ docker-compose down
 
+# docker-compose exec db bash -c 'mysql -u${MYSQL_USER} -p${MYSQL_PASSWORD} ${MYSQL_DATABASE}'
+
 # 参考URL http://docs.docker.jp/compose/compose-file.html#service-configuration-reference
 
 # 初回
@@ -65,3 +67,12 @@ volumes:
 # cp .env.example .env
 # php artisan key:generate
 # php artisan migrate
+
+#
+# 【LaravelでDB接続】
+# mysql> show variables like 'hostname';
+# 上のコマンドによって出てくるものをLaravel-PJの.envのDB_HOSTにする
+# DB_PORT=3306はホストのポート番号
+# 
+# 
+# 
